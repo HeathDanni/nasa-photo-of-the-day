@@ -9,7 +9,7 @@ function App() {
       .get(`https://api.nasa.gov/planetary/apod?api_key=gnW3zg7lvPtYsBGW1XMtH2ITzkqxTyUyRXIcyaWo`)
       .then((res) => {
         console.log('res: ', res);
-        setNasaData(res);
+        setNasaData(res.data);
       })
       .catch((err) => {
         console.log('err: ', err);
