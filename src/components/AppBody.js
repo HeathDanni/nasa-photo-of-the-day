@@ -1,7 +1,10 @@
 import React from 'react';
 
-const AppBody = () => {
-    return <div><p>this is a new component</p></div>
+const AppBody = (props) => {
+return <div>
+    <img src = {props.url}>
+        </img><p>{props.explanation}</p>
+        </div>;
 }
   
 export default AppBody
